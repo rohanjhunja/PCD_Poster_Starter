@@ -18,7 +18,7 @@ async function setup() {
   noLoop();
 
   // Load the pre-processed book data (chapters, color words, and lengths)
-  bookData = await loadJSON('gallery_previews.json');
+  bookData = await loadJSON('https://raw.githubusercontent.com/rohanjhunja/Hitchhiker/main/gallery_previews.json');
 
   // Now that data is ready, draw the poster
   redraw();
